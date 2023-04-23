@@ -283,6 +283,22 @@ footer {
   text-align: center;
 }
 
+/* Style footnotes as superscript */
+.footnote {
+  font-size: 0.8em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+/* Style figure captions */
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  color: #666;
+  margin-top: 0.5em;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
