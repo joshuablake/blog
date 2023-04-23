@@ -8,15 +8,15 @@ Forecasters often strive to predict the rate at which events occur[^rate]. Howev
 
 [^rate]: The rate of an event is the average (mean) number of events that occur per unit time. For example, the number of births per year or pandemic per decade. 
 
-In 2022, Jamie Sevilla and Ege Erdill published a [blog post](https://epochai.org/blog/a-time-invariant-version-of-laplace-s-rule) that proposed a more robust alternative: the gamma-Poisson model.
+In 2022, Jamie Sevilla and Ege Erdil published a [blog post](https://epochai.org/blog/a-time-invariant-version-of-laplace-s-rule) that proposed a more robust alternative: the gamma-Poisson model.
 This model is time- or scale-invariant, meaning that the choice of scale does not affect the results.
-In this post, we will delve deeper into the gamma-Poisson model, exploring its assumptions and how to fully utilise the posterior predictions, and finally recommending an alternative to Sevilla and Erdill's suggested prior.
+In this post, we will delve deeper into the gamma-Poisson model, exploring its assumptions and how to fully utilise the posterior predictions, and finally recommending an alternative to Sevilla and Erdil's suggested prior.
 
 There are three main recommendations in this post.
 
 1. Consider the assumptions behind your model, particularly that the rate of events is constant and that the times between events are independent.
 3. Use the full posterior, including both the uncertainty in the event rate and the inherent randomness in when events occur, when making forecasts.
-2. Consider the $\text{Gamma(1/3, 0)}$ prior when no prior information is available (recommended by [Kerman (2011)](https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-5/issue-none/Neutral-noninformative-and-informative-conjugate-beta-and-gamma-prior-distributions/10.1214/11-EJS648.full) as a "neutral prior"), rather than the $\text{Gamma}(1, 0)$ recommended by Sevilla and Erdill.
+2. Consider the $\text{Gamma(1/3, 0)}$ prior when no prior information is available (recommended by [Kerman (2011)](https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-5/issue-none/Neutral-noninformative-and-informative-conjugate-beta-and-gamma-prior-distributions/10.1214/11-EJS648.full) as a "neutral prior"), rather than the $\text{Gamma}(1, 0)$ recommended by Sevilla and Erdil.
 
 ## The gamma-Poisson model
 
@@ -40,7 +40,7 @@ One convenient property of the gamma-Poisson model is that the posterior distrib
 [^conjugate]: This is because the gamma and Poisson distributions are [conjugate distributions](https://en.m.wikipedia.org/wiki/Conjugate_prior).
 
 
-## Using the Posterior Distribution for Forecasting
+## Using the posterior distribution for forecasting
 
 When forecasting from the gamma-Poisson model, there's two reasons for our uncertainty.
 First, we are unsure of the underlying rate of events, represented by our posterior gamma distribution.
@@ -102,7 +102,7 @@ Several recommendations have been made for choosing $\alpha$.
 Note that if $x$ is larger than about 5 or 10, the recommendations will yield similar results, so the choice is not critical.
 If you have fewer events, I would recommend trying $\alpha = 1$ and $\alpha = 1/3$ to check how sensitive your results would be to this assumption for the specific quantities you care about.
 
-Sevilla and Erdill recommended $\alpha=1$ because it closely resembles Laplace's rule and provides the best point estimate of the time between events (in expectation).
+Sevilla and Erdil recommended $\alpha=1$ because it closely resembles Laplace's rule and provides the best point estimate of the time between events (in expectation).
 However, it tends to overestimate the rate of events significantly[^rate-vs-time-expectation].
 This prior will mean that the expected rate of events is always noticeably higher than the observed rate.
 Furthermore, there is quite a large posterior probability that this rate is higher (see the figure below).
@@ -114,7 +114,7 @@ This is because the median of a gamma distribution with parameters $a$ and $b$ i
 Intuitively, this seems reasonable: if we have seen $x$ events in $T$ time periods, we should think it is just as likely that the mean rate is $x/T$.
 
 Another popular choice is to make $\alpha$ very small, say $10^{-6}$.
-This makes the prior pretty flat, and approximates the "scale-invariant" prior that Sevilla and Erdill want to use but do not due to creating an improper posterior.
+This makes the prior pretty flat, and approximates the "scale-invariant" prior that Sevilla and Erdil want to use but do not due to creating an improper posterior.
 Furthermore, it minimises the mean squared error in estimating the rate of events.
 However, this prior places far too much probability mass on extremely small rates of events before we observe one.
 
@@ -131,7 +131,8 @@ However, neither perform that well when we have not seen any events (especially 
 Choosing $\alpha = 1/3$ provides a reasonable trade-off between the two, and has the additional desirable property that, whenever we have observed at least one event, we think that the rate of events we've observed ($x/T$) is equally as likely to be too high as too low.
 
 ## Conclusion
-Sevilla and Erdill correctly pointed out that using Laplace's rule for a continuous observation (such as time) leads to inconsistencies.
+
+Sevilla and Erdil correctly pointed out that using Laplace's rule for a continuous observation (such as time) leads to inconsistencies.
 Here, we've laid out some details of the assumptions and use of this model.
 I'd strongly recommend you to make use of the full posterior distribution for your forecasting, and consider a $\text{Gamma}(1/3, 0)$ prior.
 
