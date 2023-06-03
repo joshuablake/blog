@@ -18,12 +18,12 @@ avatar: https://pbs.twimg.com/profile_images/854376106761256960/JU44mFRY_400x400
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: joshbblake@gmail.com
   facebook:
   flickr:
-  github:
+  github: joshuablake
   instagram:
-  linkedin:
+  linkedin: joshua-blake-22048b14a
   pinterest:
   rss: yes # just type anything here for a working RSS icon
   twitter: JoshuaBlake_
@@ -34,10 +34,10 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: "deconfusion-device"
+disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: G-YFTJSKDGD9
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
