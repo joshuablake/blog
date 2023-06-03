@@ -108,4 +108,4 @@ None of these are on its own insurmountable for the theory, however, combined, t
 EA generally approves of [reasoning with best guesses](https://slatestarcodex.com/2013/05/02/if-its-worth-doing-its-worth-doing-with-made-up-statistics/), I agree (at least, you should consider them).
 That principle should be extended to longtermist interventions, and those advocating for large amounts of resources to go there should make their calculations clear.
 
-_Discuss this post on [the EA forum](https://forum.effectivealtruism.org/posts/vuD4H7ziqLuPMGJYF/linkpost-my-doubts-about-longtermism), as [a Google Doc](https://docs.google.com/document/d/1_GeU6DodNMhnNAKINjvbuwKLvwts_weta2ZdyzWLKZY/edit?usp=sharing), or on Twitter._
+_Discuss this post on [the EA forum](https://forum.effectivealtruism.org/posts/vuD4H7ziqLuPMGJYF/linkpost-my-doubts-about-longtermism), as [a Google Doc](https://docs.google.com/document/d/1_GeU6DodNMhnNAKINjvbuwKLvwts_weta2ZdyzWLKZY/edit?usp=sharing), or [on Twitter](https://twitter.com/JoshuaBlake_/status/1664949861450391552?s=20)._
