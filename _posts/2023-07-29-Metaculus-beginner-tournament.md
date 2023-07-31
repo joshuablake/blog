@@ -56,3 +56,5 @@ If I had updated my forecast, I could have reduced the uncertainty and performed
 _This section courtesy of ChatGPT. The tone is... Interesting..._
 
 While this post doesn't offer any revolutionary insights, it serves to highlight the importance of following well-established forecasting principles in a tournament setting, like Metaculus's beginner tournament. The experience underscored the value of respecting base rates, regularly revising predictions, and acknowledging the fair criteria set by the organisers. This journey may not have ended with a formal victory, but the learning outcomes - embracing both our hits and misses as part of the forecasting process - make it a triumph in its own right. Every forecasting challenge is an opportunity for growth and this tournament has been no different.
+
+_Comment on this post using [Google Docs](https://docs.google.com/document/d/1duenmX71VHsq7wSKxp9V5n8qHk-0e8As03ed_hWvwd4/edit) or [Twitter](https://twitter.com/JoshuaBlake_/status/1686067857224843276)._
