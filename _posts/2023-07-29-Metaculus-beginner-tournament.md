@@ -2,6 +2,7 @@
 layout: post
 title: "Topping the Metaculus beginner tournament"
 date: 2023-06-03
+redirect_to: "https://blog.joshuablake.co.uk/p/metaculus-beginner-tournament"
 ---
 
 

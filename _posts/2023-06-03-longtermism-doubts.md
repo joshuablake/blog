@@ -2,6 +2,7 @@
 layout: post
 title: "My doubts about longtermism"
 date: 2023-06-03
+redirect_to: "https://blog.joshuablake.co.uk/p/longtermism-doubts"
 ---
 
 ["Longtermism is the view that we should be doing much more to protect future generations."](https://www.williammacaskill.com/longtermism)

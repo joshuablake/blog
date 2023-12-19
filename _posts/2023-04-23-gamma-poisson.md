@@ -2,6 +2,7 @@
 layout: post
 title: "Improve your forecasts of events: use the gamma-Poisson model"
 date: 2023-04-23
+redirect_to: "https://blog.joshuablake.co.uk/p/gamma-poisson"
 ---
 
 Forecasters often strive to predict the rate at which events occur[^rate]. However, traditional models used by forecasters, such as Laplace's rule (based on the beta-binomial model) have their limitations. These models are sensitive to the choice of scale (e.g., whether time is measured in years or months) and do not accommodate multiple events occurring within a single time period.
